@@ -13,12 +13,21 @@
   </head>
   <style>
     html {
-      
-      font-family: 'Open Sans', sans-serif;
+      font-family: "Open Sans", sans-serif;
+    }
+    body {
+      width: 600px;
+      margin: 0 auto;
+      background-color: #ff9500;
+      padding: 0 20px 20px 20px;
+      border: 5px solid black;
+    }
+    h1 {
+      text-align: center;
     }
   </style>
   <body>
-    <H1>八嘎</H1>
+    <h1>八嘎</h1>
     <p>
       Contrast that with Cainiao, in which Alibaba has a controlling stake.
       将京东物流与阿里巴巴控股的菜鸟相比较。 It does not own many of the
@@ -37,4 +46,9 @@
       阿里巴巴则购买了几家大型物流公司的少数股权，以此来对中国物流业施加更多影响。
     </p>
   </body>
+  <script>
+    document.querySelector("html").onclick = function () {
+      alert("别戳我，我怕疼。");
+    };
+  </script>
 </html>
