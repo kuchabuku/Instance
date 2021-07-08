@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>进度条</title>
+    <style>
+      label {
+        padding-right: 10px;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="file">File progress:</label>
+    <!-- <progress>标签用来显示一项任务的完成进度 通常情况下，都显示为一个进度条形式  -->
+    <progress id="file" max="100" value="70">70%</progress>
+
+    <!-- <meter>用来显示已知范围的标量值或者分数值 -->
+    <p>
+      Heat the oven to
+      <meter min="200" max="500" value="350">350 degrees</meter>
+    </p>
+    <p>
+      He got a <meter low="69" high="80" max="100" value="84">B</meter> on the
+      exam.
+    </p>
+  </body>
+</html>

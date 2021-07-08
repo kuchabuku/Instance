@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>独立引用单元</title>
+  </head>
+  <style>
+    figure {
+      border: thin #c0c0c0 solid;
+      display: flex;
+      flex-flow: column;
+      padding: 5px;
+      max-width: 220px;
+      margin: auto;
+    }
+
+    img {
+      max-width: 220px;
+      max-height: 150px;
+    }
+
+    figcaption {
+      background-color: #222;
+      color: #fff;
+      font: italic smaller sans-serif;
+      padding: 3px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <!-- <figure>通常和<figcaption>配合使用，作为一个独立的引用单元-->
+    <!-- 经常使用在主文中引用图片，表格，代码 -->
+    <figure>
+      <img
+        src="https://w.wallhaven.cc/full/28/wallhaven-28d176.jpg"
+        alt="Elephant at sunset"
+      />
+      <figcaption>一张图片</figcaption>
+    </figure>
+
+    <figure>
+      <figcaption><cite>Edsger Dijkstra:</cite></figcaption>
+      <blockquote>
+        If debugging is the process of removing software bugs, then programming
+        must be the process of putting them in.
+      </blockquote>
+    </figure>
+
+    <figure role="img" aria-labelledby="cow-caption">
+      <!-- <pre> 标签表示预定义格式文本 -->
+      <!-- 在该元素中的文本通常按照原文件中的编排，以等宽字体的形式展现出来，文本中的空白符（比如空格和换行符）都会显示出来。(紧跟在 <pre> 开始标签后的换行符也会被省略) -->
+      <pre>
+    ___________________________
+  < I'm an expert in my field. >
+    ---------------------------
+           \   ^__^
+            \  (oo)\_______
+               (__)\       )\/\
+                   ||----w |
+                   ||     ||
+    </pre
+      >
+      <figcaption id="cow-caption">
+        A cow saying, "I'm an expert in my field." The cow is illustrated using
+        preformatted text characters.
+      </figcaption>
+    </figure>
+
+    <figure>
+      <p style="white-space: pre">
+        Bid me discourse, I will enchant thine ear, Or like a fairy trip upon
+        the green, Or, like a nymph, with long dishevell'd hair, Dance on the
+        sands, and yet no footing seen: Love is a spirit all compact of fire,
+        Not gross to sink, but light, and will aspire.
+      </p>
+      <figcaption>
+        <cite>Venus and Adonis</cite>, by William Shakespeare
+      </figcaption>
+    </figure>
+  </body>
+</html>
